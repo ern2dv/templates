@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+}
+
+h1 + p {
+    color: #f18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2{
+    font-size: 1.3125rem;
+    margin: 0;
+}
+    
+h2 + p{
+    font-weight: 900;
+    color: #f18119;
+    margin-top: 0;
+    text-transform: uppercase;
+
+}
+
+strong{
+    font-weight: 900;
+}
+button{
+    background-image: linear-gradient(to left, #ff713b, #ffa51d);
+    color:aliceblue;
+    border: none; 
+    padding: .6em;   
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: box-shadow 500ms;
+}
+input{
+    margin-bottom: .75em; 
+    border: 1px solid #909090;
+    color: #505050;
+    font-family: inherit;
+    text-align: inherit;
+    padding: .5em;
+    transform: scale(1);
+    transition: transform 250ms;
+    
+}
+input:focus{
+    transform: scale(1.07);
+}
+button,
+input{
+    width: 100%;
+    border-radius: 4px;
+    
+}
+button:hover,
+button:focus{
+    box-shadow: inset 10px 8px 20px -3px rgba(195, 56, 7, 1);
+    
+}
+.text-top{
+    font-size: .625rem;
+    color: #f18119;
+    font-weight: 900;
+    text-transform: uppercase;
+    order: -1;
+    border-top: 5px solid #F18119;
+    border-image: linear-gradient(to left, #f35c20, #fa8c25) 1;
+    margin-top: 0;
+    padding-top: 2px;
+}
+.last-print{
+    font-size: .625rem;
+    letter-spacing: 1px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+    background-image: url(img/ribs.jpg);
+    background-color: #404040;
+    background-blend-mode: exclusion;
+    background-size: cover;
+    background-position: center;
+    padding: 0 .5em 2em;
+}
+
+.main{
+    padding: 2em 1em;
+}
+
+.title > *,
+.main > *{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-form{
+    width: 80%;
+    max-width: 300px;
+}
+
+
+
+@media (min-width: 550px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+    
+    .title,
+    .main {
+        width: 50%;
+        min-height: 100vh;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
