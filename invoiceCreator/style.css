@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #6D28D9;
+    font-family: 'Inter', sans-serif;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    max-width: 550px;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.header{
+    background-color: #3A69D2;
+    color: wheat;
+    text-align: center;
+    padding: 1.632em 0;
+}
+.header h1 {
+    margin-bottom: 0;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    font-size: 3rem;
+}
+.header p{
+    font-size: 1.25rem;
+}
+
+.main{
+    background-color: #1F2937;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 2em 3em;
+}
+.btn_group{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+.btn{
+    padding: .835em;
+    border: none;
+    border-radius: 7px;
+    background-color: #d1d4f4;
+    cursor: pointer;
+    width: 130px;
+}
+.btn-invoice{
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    padding: .635em;
+    background-color: #3a69d2;
+    color: #d1d4f4;
+    line-height: 24px;
+    font-weight: 700;;
+
+}
+.main-tasks{
+    border-bottom: 1px solid #d1d4f4;
+}
+.task{
+    font-weight: 400;
+}
+.total{
+    font-weight: 900;
+}
+.delete{
+    font-size: .85em;
+    font-weight: 900;
+    margin-left: 10px;
+    color:#d62e17;
+    cursor: pointer;
+}
+#fullPrice{
+    text-align: end;
+}
+
+.notes h3{
+    font-weight: 400;
+}
+.notes p{
+    font-size: .625em;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
